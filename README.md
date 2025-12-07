@@ -36,8 +36,24 @@ cd GoRent
 javac GoRent.java
 java GoRent
 
+==============================
+   GO RENT — NEON TERMINAL
+==============================
+
+[1] DAFTAR MOBIL
+[2] INPUT DATA PELANGGAN
+[3] HITUNG BIAYA SEWA
+[4] CETAK STRUK
+[0] EXIT
+
 src/
  ├── GoRent.java        # main program
  ├── Database.java      # data kendaraan
  ├── Customer.java      # data pelanggan
  └── Receipt.java       # output struk
+
+🌌 🖤 AUTHOR
+
+Hans / Sirhan Muzaffar
+Mahasiswa Teknologi Informasi
+Pecinta teknologi & cyberpunk aesthetic ⚡
