@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class TBPDDPUAS {
    public static void main (String[] args){
         try{
@@ -101,7 +102,7 @@ public class TBPDDPUAS {
                 String tgl = day +"/"+ month +"/"+ year;
                 
                 System.out.print("Berapa hari ingin disewa: ");
-                    int harimobil = input.nextInt();
+                int harimobil = input.nextInt();
 
                     
                     int d = day;
@@ -221,13 +222,13 @@ public class TBPDDPUAS {
                 
                 String tglmtr = daymtr +"/"+ monthmtr +"/"+ yearmtr;
 
+               
+                System.out.print("Berapa hari ingin disewa: ");
+                int harimotor = input.nextInt();
+                
                 int d2 = daymtr;
                 int m2 = monthmtr;
                 int y2 = yearmtr;
-
-                System.out.print("Berapa hari ingin disewa: ");
-                    int harimotor = input.nextInt();
-
                    
                      int[] hariMo = {31,28,31,30,31,30,31,31,30,31,30,31};
                 
@@ -360,4 +361,3 @@ public class TBPDDPUAS {
         }
     }  
 }
-
