@@ -19,6 +19,12 @@ Dirancang untuk tugas, project kuliah, atau pondasi aplikasi skala lebih besar.
 ---
 
 ## 🌐 ⚡ **FEATURE MAP**
+[ MAIN MENU ]
+├── 🚗 Lihat Daftar Mobil
+├── 📝 Input Data Pelanggan
+├── 💸 Hitung Total Harga Sewa
+├── 📄 Cetak Bukti Transaksi
+└── ❌ Keluar
 
 ---
 
@@ -35,6 +41,16 @@ git clone https://github.com/yourusername/GoRent.git
 cd GoRent
 javac GoRent.java
 java GoRent
+
+🧩 🔧 TECH STACK
+
+☕ Java
+
+🧮 Scanner Input System
+
+📦 Array Data Management
+
+🔁 Loop + Condition Flow Control
 
 ==============================
    GO RENT — NEON TERMINAL
