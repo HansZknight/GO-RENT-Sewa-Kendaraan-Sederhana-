@@ -1,6 +1,6 @@
 <h1 align="center">
   <img src="https://i.imgur.com/Z7AzM5O.gif" width="70px"><br>
-  <span style="color:#00f0ff;">✨ GoRent ✨</span><br>
+  <span style="color:#00f0ff;">✨ GO-RENT ✨</span><br>
   <sub style="color:#ff00f7;">Java-based Simple Vehicle Rental System</sub>
 </h1>
 
