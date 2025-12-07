@@ -1,58 +1,54 @@
-🟦 GO-RENT — Aplikasi Rental Kendaraan Berbasis Java (Console App)
+<div align="center">
+🚀 GO-RENT
+Java Console-Based Vehicle Rental System
+<img src="https://img.shields.io/badge/Language-Java-red?style=for-the-badge"> <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/Type-Console--App-green?style=for-the-badge"> </div>
+🔥 Tentang GO-RENT
 
-GO-RENT adalah aplikasi sederhana berbasis Java yang digunakan untuk mengelola penyewaan mobil dan motor secara digital melalui antarmuka console.
-Aplikasi ini dirancang untuk memudahkan proses transaksi, pengecekan stok, penghitungan biaya, hingga pencatatan riwayat penyewaan.
+GO-RENT adalah aplikasi penyewaan mobil dan motor berbasis Java Console, dirancang untuk mempermudah proses rental kendaraan secara cepat, efisien, dan akurat.
+Program ini mendukung perhitungan otomatis, diskon, validasi input, hingga riwayat transaksi.
 
-🚀 Fitur Utama
-1. Sewa Mobil
+Aplikasi ini cocok untuk pembelajaran Java fundamental, tugas kuliah, maupun proyek pemula.
 
-Memilih jenis mobil dari daftar 5 pilihan.
+✨ Fitur Utama
+🟦 1. Sewa Mobil
 
-Perhitungan total biaya otomatis.
+5 pilihan mobil.
+
+Hitung biaya otomatis.
 
 Diskon otomatis:
 
-≥ 3 hari → 10%
+3 hari → 10%
 
-≥ 7 hari → 15%
+7 hari → 15%
 
-Sistem tanggal kembali otomatis (tanpa library tambahan).
+Hitung tanggal kembali dengan logika manual.
 
-Validasi stok & input tanggal.
+Struk pembayaran lengkap.
 
-Menampilkan struk pembayaran lengkap.
+🟩 2. Sewa Motor
 
-2. Sewa Motor
+Sistem identik dengan sewa mobil.
 
-Sistem serupa dengan sewa mobil.
+5 tipe motor lengkap dengan harga, stok, dan diskon.
 
-Menyediakan 5 pilihan motor dengan harga berbeda.
+🟧 3. Cek Stok
 
-Perhitungan diskon dan tanggal kembali otomatis.
+Tabel stok mobil & motor yang selalu update.
 
-Struk transaksi ditampilkan secara detail.
+🟪 4. Riwayat Transaksi
 
-3. Cek Stok Kendaraan
+Menyimpan hingga 100 transaksi.
 
-Menampilkan stok terkini untuk semua mobil dan motor.
+Format rapi dan terstruktur.
 
-Stok berkurang otomatis setelah transaksi berhasil.
+🟥 5. Sistem Rating
 
-4. Riwayat Transaksi
+Input rating 1–5 saat keluar.
 
-Menyimpan hingga 100 riwayat transaksi.
+Dapat menambahkan saran.
 
-Menampilkan transaksi secara berurutan (mobil & motor).
-
-5. Sistem Rating (Sebelum Keluar)
-
-Pengguna dapat memberi rating (1–5).
-
-Bisa meninggalkan saran atau masukan.
-
-Sistem keluar dengan pesan terima kasih.
-
-📌 Struktur Menu Utama
+🧭 Menu Utama
          GO-RENT        
 |======================|
 | 1. SEWA MOBIL        |
@@ -62,70 +58,20 @@ Sistem keluar dengan pesan terima kasih.
 | 5. KELUAR            |
 |======================|
 
-🛠️ Teknologi yang Digunakan
-
-Java Standard Edition
-
-Scanner (untuk input pengguna)
-
-Array untuk menyimpan:
-
-daftar kendaraan
-
-harga
-
-stok
-
-riwayat transaksi
-
-Tidak memakai library eksternal sehingga sangat ringan dan mudah dijalankan.
-
-📥 Cara Menjalankan Program
-1. Clone Repository
+🛠️ Teknologi
+Komponen	Keterangan
+Bahasa	Java
+Input	Scanner
+Struktur Data	Array
+Output	Console
+Error Handling	Try–Catch
+📥 Cara Menjalankan
 git clone https://github.com/username/GoRent-Java.git
-
-2. Masuk ke folder project
 cd GoRent-Java
-
-3. Compile program
 javac TBPDDPUAS.java
-
-4. Jalankan
 java TBPDDPUAS
 
-📊 Flow Program
-
-User memilih menu.
-
-Program memvalidasi input.
-
-Jika menyewa:
-
-Pilih kendaraan
-
-Masukkan tanggal
-
-Masukkan lama sewa
-
-Sistem menghitung:
-
-Harga awal
-
-Diskon
-
-Total bayar
-
-Tanggal kembali
-
-Menampilkan struk transaksi.
-
-Riwayat disimpan.
-
-Stok berkurang otomatis.
-
-Saat keluar → pengguna dapat memberi rating.
-
-🧾 Contoh Output Struk
+🧾 Contoh Struk
 ========= STRUK SEWA MOBIL ==========
 Nama             : Andi
 Mobil            : Toyota Avanza
@@ -133,68 +79,62 @@ Harga/Hari       : Rp 300000
 Tanggal Pinjam   : 2/12/2025
 Tanggal Kembali  : 5/12/2025
 Lama Sewa        : 3 hari
-Harga Awal       : Rp 900000
 Diskon           : 10%
-Potongan Diskon  : Rp 90000
 Total Bayar      : Rp 810000
-Uang Masuk       : Rp 1000000
 Kembalian        : Rp 190000
 ============= TERIMA KASIH ===========
 
-🔒 Validasi Sistem
+📊 Alur Program
+flowchart TD
+A[Mulai Program] --> B[Menu Utama]
+B -->|1| C[Sewa Mobil]
+B -->|2| D[Sewa Motor]
+B -->|3| E[Cek Stok]
+B -->|4| F[Lihat Riwayat]
+B -->|5| G[Exit + Rating]
 
-Program telah dilengkapi dengan berbagai validasi:
+C --> H[Hitung Biaya + Struk]
+D --> H
+H --> B
 
-✔ Input tanggal valid
+E --> B
+F --> B
+G --> I[Selesai]
 
-✔ Input pilihan kendaraan (1–5)
+⭐ Keunggulan GO-RENT
 
-✔ Stok tidak boleh negatif
+🔹 Antarmuka sederhana, mudah digunakan
 
-✔ Uang pembayaran harus cukup
+🔹 Perhitungan otomatis tanpa library tanggal
 
-✔ Menangani error input menggunakan try-catch
+🔹 Validasi input lengkap
 
-👥 Anggota Tim
+🔹 Stok kendaraan dinamis
 
-(Sesuaikan sendiri dengan nama kelompok kalian)
+🔹 Bisa dikembangkan ke versi GUI atau database
 
-Nama 1 — Developer
+🧩 Pengembangan Selanjutnya
 
-Nama 2 — Dokumentasi & Testing
+Integrasi database (MySQL / SQLite)
 
-Nama 3 — Analyst
+Migrasi ke GUI (JavaFX / Swing)
 
-Nama 4 — Debugging
+Export riwayat ke file .txt atau .csv
 
-📌 Catatan Pengembangan
+Login admin + manajemen kendaraan
 
-Beberapa hal yang dapat ditingkatkan untuk versi selanjutnya:
+👥 Tim Pengembang
 
-Sistem login admin
+Silakan isi sesuai kelompok kalian.
 
-Penyimpanan riwayat dengan file .txt atau database
+Nama	Peran
+Developer 1	Programmer
+Developer 2	Dokumentasi
+Developer 3	Tester
+Developer 4	Analyst
+<div align="center">
+🎉 Terima Kasih Telah Menggunakan GO-RENT
 
-Perhitungan tanggal menggunakan library LocalDate
+"Simple. Fast. Efficient."
 
-Mendesain UI berbasis GUI (JavaFX / Swing)
-
-Integrasi ke database untuk rental skala besar
-
-🎉 Penutup
-
-GO-RENT dibuat sebagai aplikasi sederhana namun fungsional untuk mempelajari konsep dasar:
-
-Array
-
-Kondisi
-
-Perulangan
-
-Validasi input
-
-Perhitungan otomatis
-
-Pembuatan struk
-
-Aplikasi ini diharapkan menjadi dasar untuk membangun sistem rental yang lebih kompleks dan modern.
+</div>
