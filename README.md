@@ -62,6 +62,16 @@ java GoRent
 [4] CETAK STRUK
 [0] EXIT
 
+🚀⚙️ FUTURE UPDATE (ROADMAP)
+
+ Dark Neon GUI (JavaFX)
+
+ Payment Simulation
+
+ Auto-Generated PDF Receipt
+
+ Database Integration (MySQL / SQLite)
+
 src/
  ├── GoRent.java        # main program
  ├── Database.java      # data kendaraan
